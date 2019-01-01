@@ -5,20 +5,7 @@
              Style="{StaticResource visualStyle}">
     
     <ContentPage.Resources>
-
         <ResourceDictionary>
-                        
-            <!-- OK!!! Is Working Syntax  -->
-            <!--<ResourceDictionary.MergedDictionaries>
-                <ResourceDictionary Source="MyResourceDictionary.xaml" />
-            </ResourceDictionary.MergedDictionaries>-->
-            
-            <!-- Style überschreibt "visualStyle" aus MyResourceDictionary -->
-            <!--<Color x:Key="HhColor1">LightYellow</Color>
-            <Style x:Key="visualStyle" TargetType="VisualElement">
-                <Setter Property="BackgroundColor" Value="{StaticResource HhColor1}" />
-            </Style>-->
-
             <Style x:Key="baseStyle" TargetType="View"
                    BasedOn="{StaticResource visualStyle}">
                 <Setter Property="HorizontalOptions" Value="Center" />
@@ -30,8 +17,6 @@
     <StackLayout>
         <StackLayout.Resources>
             <ResourceDictionary>
-                <x:Double x:Key="borderWidth">3</x:Double>
-
                 <Style TargetType="Label"
                         BasedOn="{StaticResource baseStyle}">
                     <Setter Property="TextColor" Value="Black" />
@@ -42,9 +27,8 @@
                         BasedOn="{StaticResource baseStyle}">
                     <Setter Property="TextColor" Value="Blue" />
                     <Setter Property="FontSize" Value="Large" />
-                    <Setter Property="BorderColor" Value="LightSteelBlue" />
-                    <Setter Property="BorderWidth" Value="{StaticResource borderWidth}" />
-                    <Setter Property="CornerRadius" Value="12" />
+                    <Setter Property="BorderColor" Value="Blue" />
+                    <Setter Property="BorderWidth" Value="2" />
                 </Style>
             </ResourceDictionary>
         </StackLayout.Resources>
