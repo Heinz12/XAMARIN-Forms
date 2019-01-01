@@ -4,17 +4,10 @@
              x:Class="StyleHierarchy.App">
 
     <Application.Resources>
-        
         <ResourceDictionary>
-            <Color x:Key="ColorBlue">Blue</Color>
             <Style x:Key="visualStyle" TargetType="VisualElement">
-                <Setter Property="BackgroundColor" Value="Green" />
+                <Setter Property="BackgroundColor" Value="Pink" />
             </Style>
         </ResourceDictionary>
-        
-        <!-- visualStyle wird in MyResourceDictionary auch definiert
-             Wer zuletzt lacht, lacht am besten (gewinnt) :-)-->
-        <ResourceDictionary Source="MyResourceDictionary.xaml" />
-
     </Application.Resources>
 </Application>
